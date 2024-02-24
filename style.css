@@ -57,7 +57,6 @@ img {
 /* End CSS Reset */
 body {
   background: linear-gradient(180deg, rgba(55, 65, 81, 1), rgba(17, 24, 39, 1));
-  height: 100vh;
 }
 .container {
   margin: auto 180px;
@@ -139,6 +138,134 @@ body {
   font-size: 0.84rem;
 }
 /* End Header Section */
+/* Main Section */
+.main {
+  margin-top: 54px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 60px;
+}
+
+.article:first-child {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+.article:first-child > .article-image {
+  width: 60%;
+}
+.article:first-child > .article-body {
+  display: flex;
+  gap: 15px;
+  flex-flow: column;
+  font-family: "Patrick Hand", cursive;
+}
+.article:first-child > .article-body > .article-info {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  gap: 10px;
+  color: var(--white-60);
+}
+.article:first-child > .article-body > .article-info > img {
+  height: 5px;
+}
+.article:first-child > .article-body > .article-info > p {
+  font-family: inherit;
+}
+.article:first-child > .article-body > .article-header > h3 {
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+.article:first-child > .article-body > .article-detail > p {
+  color: var(--white-60);
+  font-size: 0.9rem;
+  width: 40ch;
+  line-height: 20px;
+  word-spacing: 2px;
+}
+.article:first-child > .article-body > .article-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: inherit;
+}
+.article:first-child > .article-body > .article-footer > img {
+  height: 50px;
+  border-radius: 50%;
+}
+.article:first-child
+  > .article-body
+  > .article-footer
+  > .writer-info
+  > .writer-name,
+.writer-role {
+  font-family: inherit;
+}
+.article:first-child
+  > .article-body
+  > .article-footer
+  > .writer-info
+  > .writer-role {
+  color: var(--white-60);
+  font-size: 0.9rem;
+}
+
+/* .article:not(.article:first-child) {
+  display: flex;
+  flex-flow: column;
+} */
+
+.article:not(.article:first-child) > .article-body {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+}
+.article-body {
+  font-family: "Patrick Hand", cursive;
+}
+.article-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--white-60);
+}
+.article-info > img {
+  width: 5px;
+}
+.article-info,
+.article-header,
+.article-detail,
+p {
+  font-family: inherit;
+}
+.article-header > p {
+  font-size: 1.4rem;
+}
+.article-detail > p {
+  color: var(--white-60);
+  line-height: 25px;
+  font-size: 0.85rem;
+}
+.article-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.article-footer .writer {
+  height: 50px;
+  border-radius: 50%;
+}
+.article-footer .writer-info .writer-role {
+  color: var(--white-60);
+  font-size: 0.9rem;
+}
 /* Responsive */
 @media (max-width: 1536px) {
 }
