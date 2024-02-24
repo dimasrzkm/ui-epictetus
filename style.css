@@ -215,11 +215,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* .article:not(.article:first-child) {
-  display: flex;
-  flex-flow: column;
-} */
-
 .article:not(.article:first-child) > .article-body {
   margin-top: 20px;
   display: flex;
@@ -266,6 +261,17 @@ p {
   color: var(--white-60);
   font-size: 0.9rem;
 }
+/* End Main Section */
+/* Footer Section */
+.copyright {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.1rem;
+  color: var(--white-60);
+}
+/* End Footer Section */
 /* Responsive */
 @media (max-width: 1536px) {
 }
