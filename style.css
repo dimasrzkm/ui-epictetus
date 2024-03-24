@@ -61,6 +61,12 @@ body {
 .container {
   margin: auto 180px;
 }
+.hidden {
+  display: none !important;
+}
+.show {
+  display: block;
+}
 /* Header Section */
 .header {
   margin-top: 80px;
@@ -272,6 +278,12 @@ p {
   color: var(--white-60);
 }
 /* End Footer Section */
+
+.search-mobile-button,
+.button-mobile {
+  display: none;
+}
+
 /* Responsive */
 @media (max-width: 1536px) {
 }
@@ -284,5 +296,66 @@ p {
 @media (max-width: 640px) {
 }
 @media (max-width: 475px) {
+  .header-search {
+    display: none;
+  }
+  .search-mobile-button,
+  .button-mobile {
+    display: block;
+  }
+  .button-mobile {
+    width: 24px;
+    height: 24px;
+  }
+  body {
+    height: 100vh;
+  }
+  .container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .header {
+    margin-top: 30px;
+  }
+  .header-navbar {
+    display: none;
+  }
+  .close-navbar {
+    position: absolute;
+    top: 15px;
+    right: 24px;
+  }
+  .header-navbar-responsive {
+    font-family: "Patrick Hand", cursive;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+      180deg,
+      rgba(55, 65, 81, 1),
+      rgba(17, 24, 39, 1)
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    gap: 20px;
+    padding: 36px 30px;
+    transition: 0.5s ease-in-out;
+  }
+  .nav-link {
+    padding: 4px;
+  }
+  .navbar-others {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+  }
+
+  .main,
+  .footer {
+    display: none;
+  }
 }
 /* End Responsive */
