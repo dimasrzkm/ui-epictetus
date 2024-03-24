@@ -285,15 +285,115 @@ p {
 }
 
 /* Responsive */
-@media (max-width: 1536px) {
-}
-@media (max-width: 1280px) {
-}
 @media (max-width: 1024px) {
+  .header-navbar {
+    display: none;
+  }
+  .button-mobile {
+    display: block;
+  }
+  .container {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .header {
+    margin-top: 60px;
+  }
+  .header-navbar-responsive {
+    font-family: "Patrick Hand", cursive;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+      180deg,
+      rgba(55, 65, 81, 1),
+      rgba(17, 24, 39, 1)
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    gap: 20px;
+    padding: 36px 30px;
+    z-index: 1;
+  }
+  .nav-link {
+    padding: 4px;
+  }
+  .navbar-others {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+  }
+  .close-navbar {
+    position: absolute;
+    top: 15px;
+    right: 24px;
+  }
 }
 @media (max-width: 768px) {
-}
-@media (max-width: 640px) {
+  .header-navbar,
+  .search,
+  .header-search {
+    display: none;
+  }
+  .button-mobile,
+  .search-mobile-button {
+    display: block;
+  }
+  .main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .header {
+    margin-top: 24px;
+  }
+  .header-navbar-responsive {
+    font-family: "Patrick Hand", cursive;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(
+      180deg,
+      rgba(55, 65, 81, 1),
+      rgba(17, 24, 39, 1)
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    gap: 20px;
+    padding: 36px 30px;
+  }
+  .nav-link {
+    padding: 4px;
+  }
+  .navbar-others {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+  }
+  .close-navbar {
+    position: absolute;
+    top: 15px;
+    right: 24px;
+  }
+  .article:first-child {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .article:first-child > .article-image {
+    width: 100%;
+  }
+  .article:first-child > .article-body > .article-detail > p {
+    font-size: 1.1rem;
+    width: 100%;
+  }
 }
 @media (max-width: 475px) {
   .header-search {
@@ -338,7 +438,6 @@ p {
     left: 0;
     gap: 20px;
     padding: 36px 30px;
-    transition: 0.5s ease-in-out;
   }
   .nav-link {
     padding: 4px;
