@@ -307,9 +307,6 @@ p {
     width: 24px;
     height: 24px;
   }
-  body {
-    height: 100vh;
-  }
   .container {
     margin-left: 30px;
     margin-right: 30px;
@@ -355,7 +352,18 @@ p {
 
   .main,
   .footer {
-    display: none;
+    display: block;
+  }
+  .article {
+    margin-bottom: 35px;
+  }
+  .article:first-child {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .article:first-child > .article-image,
+  .article:first-child > .article-body > .article-detail > p {
+    width: 100%;
   }
 }
 /* End Responsive */
